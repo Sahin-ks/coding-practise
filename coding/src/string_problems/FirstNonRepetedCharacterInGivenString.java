@@ -34,12 +34,12 @@ import java.util.stream.Collectors;
 		}
 		System.out.println("First Non Repeated Character :"+ ch);
 
-  /*  Map<Character,Long> map1 =
+    Map<Character,Long> map1 =
     		          str.chars()
     		          .mapToObj(c->(char)(c))
     		          .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 		
-		System.out.println(map1);*/
+		System.out.println(map1);
 		
 		Optional<Character> map1 = str.chars().mapToObj(c->(char)(c))
 				                .collect(Collectors
